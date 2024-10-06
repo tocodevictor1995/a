@@ -18,7 +18,7 @@ initDb((err) => {
   if (err) {
     console.log(err);
   } else {
-    app.listen(PORT, (0.0.0.0/0) => {
+    app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);
     });
   }

@@ -12,25 +12,4 @@ app.listen(PORT, () => {
     
     
     
-    const { initDb } = require('/data/db');
-    const contactsRoutes = require('/routes/contacts');
-    require('dotenv').config();
     
-    
-    
-    app.use(express.json());
-    
-    app.use('/contacts', contactsRoutes);
-    
-    app.get('/', (req, res) => {
-      res.send('Hello World!');
-    });
-    
-    initDb((err) => {
-      if (err) {
-        console.log(err);
-      } else {
-        
-        });
-      }
-    });

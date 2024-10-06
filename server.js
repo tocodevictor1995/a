@@ -1,4 +1,4 @@
-const express = require('express');
+
 const { initDb } = require('./config/db');
 const contactsRoutes = require('./routes/contacts');
 require('dotenv').config();
